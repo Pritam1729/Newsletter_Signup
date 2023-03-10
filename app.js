@@ -34,11 +34,11 @@ app.post("/",function(req,res){
     }
     var jsonData = JSON.stringify(data);
 
-    const url = "https://us21.api.mailchimp.com/3.0/lists/f16bf2cb41";
+    const url = "https://us21.api.mailchimp.com/3.0/lists/YOUR_ID";
 
     const options = {
         method: "POST",
-        auth : "pritam:d7081ac5e8866db31162a46abecdb2d1-us21",
+        auth : "pritam:YOUR_API_KEY",
     }
 
     const request = https.request(url,options,function(response) {
@@ -49,9 +49,7 @@ app.post("/",function(req,res){
         else {
             res.sendFile(__dirname + "/failure.html");
         }
-        // response.on("data",function(data){
-        //     // console.log(JSON.parse(data));
-        // })
+        
        
     })
 
@@ -70,6 +68,4 @@ app.listen(process.env.PORT || 3000,function() {
 
 
 
-// d7081ac5e8866db31162a46abecdb2d1-us21
 
-// f16bf2cb41

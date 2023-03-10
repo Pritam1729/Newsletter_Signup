@@ -2,7 +2,7 @@
     
    This perticulare website in a fullstack application. That has a backend as well as frontend attached to it. This website will take the name and email of the user those who want to subscribe for the news letter Then add it into the Mailchimsps database.
    
-   One can run using command "nodemon app.js"
+    If You Want to run the code they paste the Your API_id and API_key in place of "YOUR_ID" and "YOUR_API_KEY" from Mialchinl website .One can run using command "nodemon app.js".
    
 I could not host the website so here are some glimpse of the website
 
